@@ -1,0 +1,21 @@
+header {
+  padding: 130px 25%;
+
+  .logo {
+    margin-bottom: 70px;
+  }
+
+  h1 {
+    margin-bottom: 30px;
+  }
+
+  p {
+    margin-bottom: 50px;
+  }
+
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+}

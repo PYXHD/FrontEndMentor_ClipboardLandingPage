@@ -1,0 +1,86 @@
+@font-face {
+  font-family: Regular;
+  src: url(../fonts/BaiJamjuree-Regular.ttf);
+}
+@font-face {
+  font-family: Semibold;
+  src: url(../fonts/BaiJamjuree-SemiBold.ttf);
+}
+
+$font1: Regular;
+$font2: Semibold;
+
+$strongCyan: rgb(38, 186, 164);
+$strongCyanDarker: rgb(29, 144, 127);
+$lightBlue: rgb(97, 115, 255);
+$lightBlueDarker: rgb(69, 83, 192);
+$darkGrayishBlue: rgb(76, 84, 93);
+$grayishBlue: rgb(159, 171, 178);
+
+//general
+html {
+  font-size: 18px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  text-align: center;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+//titles and texts
+h1 {
+  font-family: $font2;
+  color: $darkGrayishBlue;
+}
+h2 {
+  font-family: $font2;
+  color: $darkGrayishBlue;
+}
+h3 {
+  font-family: $font2;
+  color: $darkGrayishBlue;
+}
+p {
+  font-family: $font1;
+  color: $grayishBlue;
+}
+
+//buttons
+button {
+  font-family: $font2;
+  font-size: 0.8rem;
+  line-height: 0;
+  padding: 20px 32px;
+  border: none;
+  border-radius: 100px;
+  color: white;
+}
+.btn-IOS {
+  cursor: pointer;
+  background-color: $strongCyan;
+  box-shadow: 0 2px 0 0 $strongCyanDarker;
+  transition: 0.2s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.btn-MAC {
+  cursor: pointer;
+  background-color: $lightBlue;
+  box-shadow: 0 2px 0 0 $lightBlueDarker;
+  transition: 0.2s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
