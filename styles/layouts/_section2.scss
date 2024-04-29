@@ -1,13 +1,16 @@
 .section2 {
+  width: 100%;
+
   .section2-subcontainer {
     padding: 30px 25%;
   }
 
   .img-devices {
     img {
-      width: 100%;
+      width: 56%;
       max-width: 100%;
       height: auto;
+      margin-top: 60px;
     }
   }
 }

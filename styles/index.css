@@ -38,21 +38,25 @@ main {
 h1 {
   font-family: Semibold;
   color: rgb(76, 84, 93);
+  margin-bottom: 15px;
 }
 
 h2 {
   font-family: Semibold;
   color: rgb(76, 84, 93);
+  margin-bottom: 15px;
 }
 
 h3 {
   font-family: Semibold;
   color: rgb(76, 84, 93);
+  margin-bottom: 15px;
 }
 
 p {
   font-family: Regular;
   color: rgb(159, 171, 178);
+  line-height: 25px;
 }
 
 button {
@@ -90,13 +94,10 @@ button {
 }
 
 header {
-  padding: 130px 25%;
+  padding: 130px 26%;
 }
 header .logo {
   margin-bottom: 70px;
-}
-header h1 {
-  margin-bottom: 30px;
 }
 header p {
   margin-bottom: 50px;
@@ -112,7 +113,7 @@ header .btn-container {
 }
 
 .section1 .section1-subcontainer1 {
-  padding: 30px 25%;
+  padding: 30px 26%;
 }
 .section1 .section1-subcontainer2 {
   display: grid;
@@ -150,15 +151,40 @@ header .btn-container {
           flex-direction: column;
   gap: 10px;
 }
-.section1 .section1-subcontainer2 .s1-right-part .h3-container p {
-  line-height: 25px;
-}
 
+.section2 {
+  width: 100%;
+}
 .section2 .section2-subcontainer {
   padding: 30px 25%;
 }
 .section2 .img-devices img {
-  width: 100%;
+  width: 56%;
   max-width: 100%;
   height: auto;
+  margin-top: 60px;
+}
+
+.section3-subcontainer1 {
+  margin-bottom: 75px;
+}
+.section3-subcontainer2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 11%;
+}
+.section3-subcontainer2 .s3-h3-container {
+  width: 94%;
+}
+.section3-subcontainer3 {
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 11%;
+  margin: 130px 0;
+}
+.section3-subcontainer3 img {
+  width: 60%;
 }/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,27 @@
+.section3 {
+  &-subcontainer1 {
+    margin-bottom: 75px;
+  }
+
+  &-subcontainer2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 11%;
+
+    .s3-h3-container {
+      width: 94%;
+    }
+  }
+
+  &-subcontainer3 {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    align-items: center;
+    padding: 0 11%;
+    margin: 130px 0;
+
+    img {
+      width: 60%;
+    }
+  }
+}
