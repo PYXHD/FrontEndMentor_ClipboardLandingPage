@@ -59,11 +59,22 @@ p {
   line-height: 25px;
 }
 
+a {
+  cursor: pointer;
+  font-family: Semibold;
+  font-size: 0.9rem;
+  color: rgb(76, 84, 93);
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(38, 186, 164);
+}
+
 button {
   font-family: Semibold;
   font-size: 0.8rem;
   line-height: 0;
-  padding: 20px 32px;
+  padding: 25px 32px;
   border: none;
   border-radius: 100px;
   color: white;
@@ -95,6 +106,14 @@ button {
 
 header {
   padding: 130px 26%;
+  background-image: url(../img/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+@media screen and (max-width: 1000px) {
+  header {
+    padding: 130px 30px;
+  }
 }
 header .logo {
   margin-bottom: 70px;
@@ -111,19 +130,45 @@ header .btn-container {
           justify-content: center;
   gap: 16px;
 }
+@media screen and (max-width: 1000px) {
+  header .btn-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 
 .section1 .section1-subcontainer1 {
   padding: 30px 26%;
+}
+@media screen and (max-width: 1000px) {
+  .section1 .section1-subcontainer1 {
+    padding: 30px 30px;
+  }
 }
 .section1 .section1-subcontainer2 {
   display: grid;
   grid-template-columns: 50% 50%;
   padding: 50px 0 120px;
 }
+@media screen and (max-width: 1000px) {
+  .section1 .section1-subcontainer2 {
+    grid-template-columns: auto;
+  }
+}
 .section1 .section1-subcontainer2 .s1-left-part img {
   width: 50vw;
   max-width: 100%;
   height: auto;
+}
+@media screen and (max-width: 1000px) {
+  .section1 .section1-subcontainer2 .s1-left-part img {
+    width: 80%;
+    max-width: 500px;
+    padding: 0 30px;
+    margin-bottom: 60px;
+  }
 }
 .section1 .section1-subcontainer2 .s1-right-part {
   display: -webkit-box;
@@ -140,6 +185,14 @@ header .btn-container {
   gap: 10%;
   padding-left: 15%;
   padding-right: 30%;
+}
+@media screen and (max-width: 1000px) {
+  .section1 .section1-subcontainer2 .s1-right-part {
+    text-align: center;
+    gap: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 .section1 .section1-subcontainer2 .s1-right-part .h3-container {
   display: -webkit-box;
@@ -158,13 +211,30 @@ header .btn-container {
 .section2 .section2-subcontainer {
   padding: 30px 25%;
 }
+@media screen and (max-width: 1000px) {
+  .section2 .section2-subcontainer {
+    padding: 30px 30px;
+  }
+}
 .section2 .img-devices img {
   width: 56%;
   max-width: 100%;
   height: auto;
   margin-top: 60px;
 }
+@media screen and (max-width: 1000px) {
+  .section2 .img-devices img {
+    width: 80%;
+    max-width: 500px;
+    margin-bottom: 60px;
+  }
+}
 
+@media screen and (max-width: 1000px) {
+  .section3 {
+    padding: 0 30px;
+  }
+}
 .section3-subcontainer1 {
   margin-bottom: 75px;
 }
@@ -173,18 +243,153 @@ header .btn-container {
   grid-template-columns: repeat(3, 1fr);
   padding: 0 11%;
 }
-.section3-subcontainer2 .s3-h3-container {
-  width: 94%;
+@media screen and (max-width: 1000px) {
+  .section3-subcontainer2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+    padding: 0;
+  }
 }
 .section3-subcontainer3 {
-  display: grid;
-  grid-template-columns: repeat(5, 20%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 0 11%;
   margin: 130px 0;
 }
-.section3-subcontainer3 img {
-  width: 60%;
+@media screen and (max-width: 1000px) {
+  .section3-subcontainer3 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 50px;
+    padding: 0 30px;
+  }
+}
+
+.section4 {
+  padding: 130px 26%;
+}
+@media screen and (max-width: 1000px) {
+  .section4 {
+    padding: 130px 20px;
+  }
+}
+.section4 p {
+  margin-bottom: 50px;
+}
+.section4 .btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 16px;
+}
+@media screen and (max-width: 1000px) {
+  .section4 .btn-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 25% 35% 20% 20%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 150px;
+  width: 100%;
+  padding: 0 11%;
+  background-color: #f5f6f8;
+}
+@media screen and (max-width: 1000px) {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    padding: 0 30px;
+  }
+}
+footer .logo-footer img {
+  width: 56px;
+}
+@media screen and (max-width: 1000px) {
+  footer .logo-footer img {
+    margin: 50px 0;
+  }
+}
+footer .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media screen and (max-width: 1000px) {
+  footer .links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+}
+footer .links .links-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  gap: 15px;
+}
+@media screen and (max-width: 1000px) {
+  footer .links .links-container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 20px;
+  }
+}
+footer .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+@media screen and (max-width: 1000px) {
+  footer .socials {
+    margin: 50px 0;
+  }
+}
+footer .socials img {
+  cursor: pointer;
 }/*# sourceMappingURL=index.css.map */

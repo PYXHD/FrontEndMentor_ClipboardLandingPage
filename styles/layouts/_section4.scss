@@ -1,15 +1,8 @@
-header {
+.section4 {
   padding: 130px 26%;
-  background-image: url(../img/bg-header-desktop.png);
-  background-repeat: no-repeat;
-  background-position: center top;
 
   @media screen and (max-width: 1000px) {
-    padding: 130px 30px;
-  }
-
-  .logo {
-    margin-bottom: 70px;
+    padding: 130px 20px;
   }
 
   p {

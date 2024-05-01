@@ -1,4 +1,8 @@
 .section3 {
+  @media screen and (max-width: 1000px) {
+    padding: 0 30px;
+  }
+
   &-subcontainer1 {
     margin-bottom: 75px;
   }
@@ -8,20 +12,28 @@
     grid-template-columns: repeat(3, 1fr);
     padding: 0 11%;
 
+    @media screen and (max-width: 1000px) {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      padding: 0;
+    }
+
     .s3-h3-container {
-      width: 94%;
     }
   }
 
   &-subcontainer3 {
-    display: grid;
-    grid-template-columns: repeat(5, 20%);
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     padding: 0 11%;
     margin: 130px 0;
 
-    img {
-      width: 60%;
+    @media screen and (max-width: 1000px) {
+      flex-direction: column;
+      gap: 50px;
+      padding: 0 30px;
     }
   }
 }

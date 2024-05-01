@@ -57,13 +57,24 @@ p {
   color: $grayishBlue;
   line-height: 25px;
 }
+a {
+  cursor: pointer;
+  font-family: $font2;
+  font-size: 0.9rem;
+  color: $darkGrayishBlue;
+  text-decoration: none;
+
+  &:hover {
+    color: $strongCyan;
+  }
+}
 
 //buttons
 button {
   font-family: $font2;
   font-size: 0.8rem;
   line-height: 0;
-  padding: 20px 32px;
+  padding: 25px 32px;
   border: none;
   border-radius: 100px;
   color: white;
